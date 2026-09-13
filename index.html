@@ -1,40 +1,354 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="AI Tools Hub — discover AI tools for study, coding, writing, images, video, audio and productivity."><meta name="theme-color" content="#0b0f19"><title>AI Tools Hub — Discover Better AI</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="nav"><a class="brand" href="#top">AI<span>Tools</span>Hub</a><nav><a href="#tools">Tools</a><a href="#categories">Categories</a><a href="#guides">Guides</a><a href="#about">About</a></nav><button class="menu" onclick="toggleMenu()">☰</button></header>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>AI Tools Hub — Best AI Tools for Study, Coding & Creativity</title>
+
+<meta name="description" content="Discover useful AI tools for students, coding, writing, images, video, audio and productivity. Find free and freemium AI tools in one simple directory.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://off10730-ship-it.github.io/ai-tools-hub/">
+
+<meta property="og:title" content="AI Tools Hub — Best AI Tools for Everyone">
+<meta property="og:description" content="Discover useful AI tools for study, coding, writing, images, video, audio and productivity.">
+<meta property="og:url" content="https://off10730-ship-it.github.io/ai-tools-hub/">
+<meta property="og:type" content="website">
+
+<meta name="theme-color" content="#0b0f19">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav">
+<a class="brand" href="#top">AI<span>Tools</span>Hub</a>
+
+<nav>
+<a href="#tools">Tools</a>
+<a href="#categories">Categories</a>
+<a href="#guides">Guides</a>
+<a href="#about">About</a>
+</nav>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+</header>
+
 <main id="top">
-<section class="hero"><div><p class="eyebrow">⚡ THE SMART AI DIRECTORY</p><h1>Find the right <span>AI tool</span> in seconds.</h1><p class="lead">A fast, mobile-first directory for students, creators, developers and everyday users.</p><div class="search"><span>⌕</span><input id="search" oninput="filterTools()" placeholder="Search AI tools, coding, image, study..." aria-label="Search tools"><kbd>/</kbd></div><div class="chips"><button onclick="quick('all')">All</button><button onclick="quick('study')">📚 Study</button><button onclick="quick('coding')">💻 Coding</button><button onclick="quick('image')">🎨 Image</button><button onclick="quick('writing')">✍️ Writing</button></div></div><div class="hero-card"><div class="orb"></div><div class="scan"></div><p>AI TOOLS<br><b>CURATED • SIMPLE • FAST</b></p></div></section>
-<section id="categories" class="section"><div class="section-head"><div><p class="eyebrow">EXPLORE</p><h2>Categories</h2></div></div><div class="category-grid"><button onclick="quick('study')">📚<b>Study</b><small>Notes, research & learning</small></button><button onclick="quick('coding')">💻<b>Coding</b><small>Code, debug & build</small></button><button onclick="quick('image')">🎨<b>Image</b><small>Generate & edit visuals</small></button><button onclick="quick('video')">🎬<b>Video</b><small>Generate & edit video</small></button><button onclick="quick('writing')">✍️<b>Writing</b><small>Copy, grammar & ideas</small></button><button onclick="quick('audio')">🎧<b>Audio</b><small>Voice, music & sound</small></button></div></section>
-<section id="tools" class="section"><div class="section-head"><div><p class="eyebrow">DIRECTORY</p><h2>Popular AI Tools</h2></div><select id="sort" onchange="filterTools()"><option value="popular">Popular</option><option value="free">Free / Freemium</option><option value="all">All</option></select></div><div id="toolGrid" class="tool-grid"></div><p id="empty" class="empty" hidden>No matching tools. Try another search.</p></section>
-<section id="recommended" class="section">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">⭐ RECOMMENDED</p>
-      <h2>Editor's Picks</h2>
-    </div>
-  </div>
 
-  <div class="guide-grid">
-    <article>
-      <span>01</span>
-      <h3>ChatGPT</h3>
-      <p>Useful for study, writing, brainstorming and coding.</p>
-      <a class="primary" href="https://chatgpt.com/" target="_blank" rel="noopener">Try ChatGPT →</a>
-    </article>
+<section class="hero">
+<div>
 
-    <article>
-      <span>02</span>
-      <h3>Gemini</h3>
-      <p>Helpful for research, learning, writing and everyday AI tasks.</p>
-      <a class="primary" href="https://gemini.google.com/" target="_blank" rel="noopener">Try Gemini →</a>
-    </article>
+<p class="eyebrow">⚡ THE SMART AI DIRECTORY</p>
 
-    <article>
-      <span>03</span>
-      <h3>Canva AI</h3>
-      <p>Create designs, images and creative content with AI tools.</p>
-      <a class="primary" href="https://www.canva.com/ai-image-generator/" target="_blank" rel="noopener">Try Canva AI →</a>
-    </article>
-  </div>
+<h1>Find the right <span>AI tool</span> in seconds.</h1>
+
+<p class="lead">
+A fast, mobile-first directory for students, creators, developers and everyday users.
+</p>
+
+<div class="search">
+<span>⌕</span>
+
+<input
+id="search"
+oninput="filterTools()"
+placeholder="Search AI tools, coding, image, study..."
+aria-label="Search tools"
+>
+
+<kbd>/</kbd>
+</div>
+
+<div class="chips">
+<button onclick="quick('all')">All</button>
+<button onclick="quick('study')">📚 Study</button>
+<button onclick="quick('coding')">💻 Coding</button>
+<button onclick="quick('image')">🎨 Image</button>
+<button onclick="quick('writing')">✍️ Writing</button>
+</div>
+
+</div>
+
+<div class="hero-card">
+<div class="orb"></div>
+<div class="scan"></div>
+
+<p>
+AI TOOLS<br>
+<b>CURATED • SIMPLE • FAST</b>
+</p>
+
+</div>
 </section>
-  <section id="guides" class="section"><div class="section-head"><div><p class="eyebrow">QUICK GUIDES</p><h2>Start here</h2></div></div><div class="guide-grid"><article><span>01</span><h3>AI for Students</h3><p>Use AI for brainstorming, explanations, revision and research — while keeping your own work authentic.</p></article><article><span>02</span><h3>AI for Coding</h3><p>Explain errors, generate starter code, refactor and learn concepts faster. Always test generated code.</p></article><article><span>03</span><h3>AI for Creators</h3><p>Plan posts, create visual concepts, edit media and turn ideas into polished content.</p></article></div></section>
-<section id="about" class="cta"><div><p class="eyebrow">BUILT FOR YOU</p><h2>One place for useful AI.</h2><p>Fast search, clean categories and official links. No complicated setup for visitors.</p></div><a class="primary" href="#tools">Explore tools →</a></section>
-</main><footer><div class="brand">AI<span>Tools</span>Hub</div><p>© 2026 AI Tools Hub · Independent directory</p><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></div></footer><script src="script.js"></script></body></html>
+
+
+<section id="categories" class="section">
+
+<div class="section-head">
+<div>
+<p class="eyebrow">EXPLORE</p>
+<h2>Categories</h2>
+</div>
+</div>
+
+<div class="category-grid">
+
+<button onclick="quick('study')">
+📚
+<b>Study</b>
+<small>Notes, research & learning</small>
+</button>
+
+<button onclick="quick('coding')">
+💻
+<b>Coding</b>
+<small>Code, debug & build</small>
+</button>
+
+<button onclick="quick('image')">
+🎨
+<b>Image</b>
+<small>Generate & edit visuals</small>
+</button>
+
+<button onclick="quick('video')">
+🎬
+<b>Video</b>
+<small>Generate & edit video</small>
+</button>
+
+<button onclick="quick('writing')">
+✍️
+<b>Writing</b>
+<small>Copy, grammar & ideas</small>
+</button>
+
+<button onclick="quick('audio')">
+🎧
+<b>Audio</b>
+<small>Voice, music & sound</small>
+</button>
+
+</div>
+</section>
+
+
+<section id="tools" class="section">
+
+<div class="section-head">
+
+<div>
+<p class="eyebrow">DIRECTORY</p>
+<h2>Popular AI Tools</h2>
+</div>
+
+<select id="sort" onchange="filterTools()">
+<option value="popular">Popular</option>
+<option value="free">Free / Freemium</option>
+<option value="all">All</option>
+</select>
+
+</div>
+
+<div id="toolGrid" class="tool-grid"></div>
+
+<p id="empty" class="empty" hidden>
+No matching tools. Try another search.
+</p>
+
+</section>
+
+
+<section id="recommended" class="section">
+
+<div class="section-head">
+
+<div>
+<p class="eyebrow">⭐ RECOMMENDED</p>
+<h2>Editor's Picks</h2>
+</div>
+
+</div>
+
+
+<div class="guide-grid">
+
+<article>
+
+<span>01</span>
+
+<h3>ChatGPT</h3>
+
+<p>
+Useful for study, writing, brainstorming and coding.
+</p>
+
+<a
+class="primary"
+href="https://chatgpt.com/"
+target="_blank"
+rel="noopener"
+>
+Try ChatGPT →
+</a>
+
+</article>
+
+
+<article>
+
+<span>02</span>
+
+<h3>Gemini</h3>
+
+<p>
+Helpful for research, learning, writing and everyday AI tasks.
+</p>
+
+<a
+class="primary"
+href="https://gemini.google.com/"
+target="_blank"
+rel="noopener"
+>
+Try Gemini →
+</a>
+
+</article>
+
+
+<article>
+
+<span>03</span>
+
+<h3>Canva AI</h3>
+
+<p>
+Create designs, images and creative content with AI tools.
+</p>
+
+<a
+class="primary"
+href="https://www.canva.com/ai-image-generator/"
+target="_blank"
+rel="noopener"
+>
+Try Canva AI →
+</a>
+
+</article>
+
+</div>
+
+</section>
+
+
+<section id="guides" class="section">
+
+<div class="section-head">
+
+<div>
+<p class="eyebrow">QUICK GUIDES</p>
+<h2>Start here</h2>
+</div>
+
+</div>
+
+
+<div class="guide-grid">
+
+<article>
+
+<span>01</span>
+
+<h3>AI for Students</h3>
+
+<p>
+Use AI for brainstorming, explanations, revision and research — while keeping your own work authentic.
+</p>
+
+</article>
+
+
+<article>
+
+<span>02</span>
+
+<h3>AI for Coding</h3>
+
+<p>
+Explain errors, generate starter code, refactor and learn concepts faster. Always test generated code.
+</p>
+
+</article>
+
+
+<article>
+
+<span>03</span>
+
+<h3>AI for Creators</h3>
+
+<p>
+Plan posts, create visual concepts, edit media and turn ideas into polished content.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+
+<section id="about" class="cta">
+
+<div>
+
+<p class="eyebrow">BUILT FOR YOU</p>
+
+<h2>One place for useful AI.</h2>
+
+<p>
+Fast search, clean categories and official links. No complicated setup for visitors.
+</p>
+
+</div>
+
+<a class="primary" href="#tools">
+Explore tools →
+</a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="brand">
+AI<span>Tools</span>Hub
+</div>
+
+<p>
+© 2026 AI Tools Hub · Independent directory
+</p>
+
+<div>
+
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
