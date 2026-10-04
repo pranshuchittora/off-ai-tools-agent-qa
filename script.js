@@ -80,6 +80,14 @@ const tools = [
     free: true
   },
   {
+    name: 'Agent QA',
+    cat: 'coding',
+    icon: 'QA',
+    desc: 'YAML web, Android and iOS testing with natural-language steps via CLI, local dashboard or local MCP. Software currently free under FSL-1.1-ALv2; configured model, browser and device services may charge separately.',
+    url: 'https://vostride.com/docs/agent-qa',
+    free: true
+  },
+  {
     name: 'Notion AI',
     cat: 'writing study productivity',
     icon: 'N',
